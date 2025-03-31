@@ -71,9 +71,9 @@ if conversion_type == "Length":
         to_unit = st.selectbox("To", ["Meters", "Kilograms", "Centimeters", "Milimeters", "Miles", "Feet", "Yards", "Inches"])
 elif conversion_type == "Weight":
     with col1:
-        from_unit = st.selectbox("From", ["Kilograms", "Grams", "Pounds", "Ounces", "   Miligrams"])
+        to_unit = st.selectbox("To", "Kilometer", "Grams", "Pounds", "Ounces", "   Miligrams"])
     with col2:
-        to_unit = st.selectbox("To", ["Kilograms", "Grams", "Pounds", "Ounces", "Miligrams"])
+        to_unit = st.selectbox("To", ["Kilometer", "Grams", "Pounds", "Ounces", "Miligrams"])
 elif conversion_type == "Temperature":
     with col1:
         from_unit = st.selectbox("From", ["Celsius", "Fahrenheit", "Kelvin"])
